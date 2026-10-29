@@ -16,7 +16,7 @@
 
 <p align="center">
   <img
-    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=750&lines=AI+%26+Full-Stack+Software+Engineer;Building+Web+%26+Mobile+Applications;Integrating+LLMs+%26+Generative+AI;Engineering+Intelligent+Automation"
+    src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=900&color=58A6FF&center=true&vCenter=true&width=750&lines=AI+%26+Full-Stack+Software+Engineer;Building+Web+%26+Mobile+Application+systems;Integrating+LLMs+%26+Generative+AI;Engineering+Intelligent+Automation"
     alt="Animated typing introduction"
   />
 </p>
