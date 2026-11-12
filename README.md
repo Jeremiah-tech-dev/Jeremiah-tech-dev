@@ -49,23 +49,52 @@ I like owning a product **end to end**: designing the backend, building the app,
 <br clear="right"/>
 
 ```python
-class JeremiahKoske:
-    role      = "Full-Stack Software Engineer"
-    location  = "Nairobi, Kenya 🇰🇪"
-    builds    = {
-        "web":     ["React", "Next.js", "Django", "FastAPI", "Node.js"],
-        "mobile":  ["Flutter", "React Native", "Android", "iOS"],
-        "backend": ["REST APIs", "PostgreSQL", "Docker", "CI/CD"],
-        "extras":  ["M-Pesa payments", "Biometric auth", "AI integration"],
-    }
-    shipped   = ["HR Genie · Play Store + App Store",
-                 "Glass With Class · 2,000+ users",
-                 "Kapchepkor College Portal"]
-    open_to   = "Full-Stack · Web · Mobile roles · remote or Nairobi"
+from dataclasses import dataclass, field
+from typing import Final
 
-    def mindset(self):
+
+@dataclass(frozen=True)
+class Engineer:
+    name:     Final = "Jeremiah Koske"
+    role:     Final = "Full-Stack Software Engineer"
+    region:   Final = "Nairobi, Kenya 🇰🇪 · UTC+3"
+    uptime:   Final = "2+ years shipping to production"
+
+    expertise: dict = field(default_factory=lambda: {
+        "architecture": ["system design", "distributed systems",
+                         "event-driven services", "multi-tenant SaaS"],
+        "backend":      ["API design", "async processing & workers",
+                         "query optimization", "concurrency & deadlock resolution"],
+        "mobile":       ["cross-platform Android & iOS", "state management",
+                         "push-notification pipelines", "store release & compliance"],
+        "security":     ["rotating JWT sessions", "OTP recovery flows",
+                         "hardware-backed keys + challenge-response",
+                         "tenant data isolation", "RBAC"],
+        "payments":     ["mobile-money integration", "transaction processing"],
+        "reliability":  ["CI/CD", "automated testing", "structured logging",
+                         "monitoring & alerting", "production debugging"],
+        "ai":           ["LLM agents", "RAG", "intent classification",
+                         "prompt-injection guardrails"],
+    })
+
+    benchmarks: dict = field(default_factory=lambda: {
+        "active_users_served":     "2,000+",
+        "backend_perf_gain":       "40%+",
+        "release_pipelines_owned": 5,
+        "stores_shipped_to":       ("Google Play", "App Store"),
+    })
+
+    async def run(self) -> None:
         while True:
-            self.build(); self.ship(); self.learn(); self.improve()
+            problem = await self.listen()
+            system  = self.design(problem, scalable=True, secure=True)
+            await self.ship(system, env="production")
+            self.observe(); self.optimize(); self.learn()
+
+
+if __name__ == "__main__":
+    import asyncio
+    asyncio.run(Engineer().run())  # status: open to full-stack · web · mobile roles
 ```
 
 ---
