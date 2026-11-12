@@ -1,1 +1,22 @@
 
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="130" viewBox="0 0 1200 130">
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff7900"/>
+      <stop offset="45%" stop-color="#1f3b73"/>
+      <stop offset="100%" stop-color="#14213d"/>
+    </linearGradient>
+    <style>
+      .bye { font: 600 18px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: #ffffff; letter-spacing: 1px;
+             opacity: 0; animation: show 1.5s ease-out .4s forwards; }
+      @keyframes show { from { opacity: 0; } to { opacity: 0.9; } }
+    </style>
+  </defs>
+  <path fill="url(#fbg)" d="M0,45 C200,5 400,75 600,40 C800,5 1000,70 1200,35 V130 H0 Z">
+    <animate attributeName="d" dur="7s" repeatCount="indefinite"
+      values="M0,45 C200,5 400,75 600,40 C800,5 1000,70 1200,35 V130 H0 Z;
+              M0,30 C200,70 400,10 600,50 C800,85 1000,15 1200,50 V130 H0 Z;
+              M0,45 C200,5 400,75 600,40 C800,5 1000,70 1200,35 V130 H0 Z"/>
+  </path>
+  <text class="bye" x="600" y="100" text-anchor="middle">Thanks for visiting  ·  Let's build something meaningful</text>
+</svg>
