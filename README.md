@@ -222,8 +222,8 @@ if __name__ == "__main__":
 | Role | Company | When |
 | :--- | :--- | :--- |
 | 🟠 **Full-Stack Software Engineer** | Skillmind Software Ltd · Remote, Nairobi | Jun 2026 – Sep 2026 |
-| 🔵 **Full-Stack Software Engineer** | Glass With Class Ltd · Remote, South Africa | Aug 2025 – Mar 2026 |
-| 🟢 **Full-Stack Software Engineer** | Uvumbuzi Community Network NGO · Nakuru | Mar 2024 – Mar 2025 |
+| 🔵 **AI & Full-Stack Software Engineer** | Glass With Class Ltd · Remote, South Africa | Aug 2025 – Mar 2026 |
+| 🟢 **AI & Full-Stack Software Engineer** | Uvumbuzi Community Network NGO · Nakuru | Mar 2024 – Mar 2025 |
 
 ---
 
